@@ -1,0 +1,15 @@
+﻿
+create table Tarea(
+IdTarea int primary key identity(1,1),
+Descripcion varchar(100),
+FechaRegistro datetime default getdate()
+)
+
+go
+
+insert into Tarea(Descripcion) values ('Aprender React JS')
+insert into Tarea(Descripcion) values ('Aprender ASP.NET Core')
+
+go
+
+select * from Tarea
